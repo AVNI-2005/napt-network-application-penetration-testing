@@ -63,11 +63,6 @@ A working web-based security assessment tool that accepts a website URL, perform
 - No automatic website crawling.
 - Findings require manual verification.
 
-
-
-### 10. Ethical Considerations
-Testing will only be performed on websites owned by the user or where explicit permission has been obtained.
-
 ---
 **Project Category:** Cybersecurity  
 **Project Type:** Python-Based Web Application Security Assessment Tool  
