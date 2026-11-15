@@ -1,5 +1,5 @@
 # Project Planning
-## Web Application Penetration Testing Tool
+##Python-Based Web Vulnerability Assessment and Security Analysis Tool
 
 ### 1. Project Overview
 A lightweight Python-based web application security assessment tool developed using Python, HTML, and CSS. It identifies common web security weaknesses through basic, non-invasive security checks and displays findings through a simple dashboard.
