@@ -1,186 +1,79 @@
-Web Application Penetration Testing
+# Project Planning
+## Web Application Penetration Testing Tool
 
-### Python-Based Web Application Security Assessment Tool
+### 1. Project Overview
+A lightweight Python-based web application security assessment tool developed using Python, HTML, and CSS. It identifies common web security weaknesses through basic, non-invasive security checks and displays findings through a simple dashboard.
 
-A lightweight web application security assessment tool developed using **Python, HTML, and CSS**. The project focuses on identifying common web security weaknesses through basic, non-invasive security checks and presenting the findings in an easy-to-understand dashboard.
+### 2. Main Objectives
+- Identify common web security misconfigurations.
+- Check HTTPS and HTTP security headers.
+- Analyze cookie security attributes.
+- Examine basic HTML form information.
+- Display security findings with severity levels.
+- Provide recommendations and downloadable reports.
 
----
+### 3. Planned Features
+1. **HTTPS Assessment:** Check secure HTTPS usage.
+2. **Security Header Analysis:** Identify missing HTTP security headers.
+3. **Cookie Analysis:** Check Secure, HttpOnly, and SameSite attributes.
+4. **HTML Form Analysis:** Identify forms and password fields.
+5. **Security Dashboard:** Display findings and severity classifications.
+6. **Report Generation:** Generate downloadable assessment reports.
 
-## Overview
+### 4. Technologies
+- Python – Backend and security assessment.
+- HTML – Web interface.
+- CSS – Dashboard design.
+- Python Standard Library – HTTP requests and server functionality.
 
-Web applications are widely used for online services, communication, business operations, and data management. However, improper security configurations and weaknesses in application design can expose websites to potential cyber threats.
-
-This project aims to develop a simple Web Application Penetration Testing tool that performs basic security assessments on authorized web applications. It examines HTTPS usage, HTTP security headers, cookie security attributes, and HTML form information.
-
-The tool processes the target website's HTTP response using Python and presents the assessment results through a simple web-based interface.
-
-## Objectives
-
-- Identify basic web application security misconfigurations.
-- Evaluate the presence of important HTTP security headers.
-- Examine cookie security attributes.
-- Check whether a website uses HTTPS.
-- Analyze basic HTML form information.
-- Present security findings with severity classifications.
-- Provide recommendations for improving web application security.
-- Generate downloadable security assessment reports.
-
-Key Features
-
-1. HTTPS Assessment
-- Checks whether the target website uses HTTPS.
-- Identifies when the final response URL uses unencrypted HTTP.
-
-2. HTTP Security Header Analysis
-- Checks Content-Security-Policy.
-- Checks Strict-Transport-Security.
-- Checks X-Content-Type-Options.
-- Checks X-Frame-Options.
-- Checks Referrer-Policy.
-
-3. Cookie Security Analysis
-- Examines Secure attributes.
-- Examines HttpOnly attributes.
-- Examines SameSite attributes.
-
-4. HTML Form Analysis
-- Counts HTML forms.
-- Identifies password input fields.
-- Provides recommendations for manual security assessment.
-
-5. Vulnerability Assessment Dashboard
-- Displays identified security observations.
-- Categorizes findings by severity.
-- Presents recommendations for improving security.
-
-6. Report Generation
-- Generates a downloadable security assessment report.
-- Includes observations, severity levels, and recommendations.
-
-Technologies Used
-
-| Technology | Purpose |
+### 5. Development Plan
+| Phase | Development Task |
 |---|---|
-| Python | Backend processing and security checks |
-| HTML | Web interface |
-| CSS | Dashboard styling |
-| Python Standard Library | HTTP server and request handling |
+| Phase 1 | Create project structure and Python application. |
+| Phase 2 | Develop website URL input interface. |
+| Phase 3 | Implement HTTPS and security header checks. |
+| Phase 4 | Implement cookie and HTML form analysis. |
+| Phase 5 | Develop results dashboard and severity classification. |
+| Phase 6 | Implement report generation and testing. |
 
-No external web framework is required.
-
-## Project Architecture
-
-The application follows a simple client-server architecture.
-
-1. The user enters an authorized target website URL.
-2. The HTML interface submits the URL to the Python application.
-3. Python performs basic security checks.
-4. The scanning module evaluates HTTP responses and page information.
-5. The results are classified according to severity.
-6. The dashboard displays the assessment findings.
-7. A downloadable report is generated.
-
-## Project Structure
-
+### 6. Project Structure
 ```text
 Web-Application-Penetration-Testing/
 │
 ├── main.py
 ├── scanner.py
-│
 ├── templates/
 │   ├── index.html
 │   └── results.html
-│
 ├── static/
 │   └── style.css
-│
+├── reports/
 ├── README.md
+├── PROJECT_PLAN.md
 └── requirements.txt
 ```
 
-## Installation and Execution
+### 7. Expected Outcome
+A working web-based security assessment tool that accepts a website URL, performs basic security checks, displays potential security issues, and generates a downloadable report.
 
-### Prerequisites
+### 8. Limitations
+- No complete penetration testing.
+- No vulnerability exploitation.
+- No authenticated scanning.
+- No automatic website crawling.
+- Findings require manual verification.
 
-- Python 3.x
-- A modern web browser
-- Windows or Linux operating system
-
-### Step 1: Clone the repository
-
-```bash
-git clone https://github.com/YOUR-USERNAME/web-application-penetration-testing.git
-```
-
-### Step 2: Open the project directory
-
-```bash
-cd web-application-penetration-testing
-```
-
-### Step 3: Run the application
-
-```bash
-python main.py
-```
-
-### Step 4: Open the application
-
-Visit the following address in your browser:
-
-```text
-http://127.0.0.1:8000
-```
-
-Enter an authorized website URL and start the security assessment.
-
-## Expected Output
-
-The application provides:
-
-- Website security assessment results.
-- HTTPS status.
-- HTTP security header observations.
-- Cookie security observations.
-- HTML form information.
-- Severity classifications.
-- Security recommendations.
-- Downloadable assessment report.
-
-## Limitations
-
-This project is designed as a basic educational security assessment tool.
-
-- It does not perform a complete penetration test.
-- It does not exploit vulnerabilities.
-- It does not perform authenticated testing.
-- It does not automatically crawl an entire website.
-- It does not prove SQL injection or XSS vulnerabilities.
-- Its findings require manual validation.
-
-## Future Enhancements
-
-- Advanced SQL injection assessment in a controlled environment.
+### 9. Future Scope
+- SQL Injection assessment.
 - Cross-Site Scripting (XSS) testing.
-- Authentication and session security analysis.
-- Website crawling and endpoint discovery.
-- Improved vulnerability classification.
+- Authentication security analysis.
+- Website crawling.
 - PDF report generation.
-- Enhanced security dashboard.
 
-## Ethical Considerations
-
-This tool is intended for educational purposes and authorized security assessments only.
-
-Users must obtain explicit permission before testing any website or web application. Unauthorized scanning or testing may violate applicable laws and policies.
-
-## Conclusion
-
-The project demonstrates how Python can be used to develop a lightweight web application security assessment system. By combining basic security checks with an understandable dashboard and reporting functionality, it provides a foundation for learning web application security and penetration testing concepts.
+### 10. Ethical Considerations
+Testing will only be performed on websites owned by the user or where explicit permission has been obtained.
 
 ---
-
-**Developed as a Cybersecurity Project**
-
+**Project Category:** Cybersecurity  
+**Project Type:** Python-Based Web Application Security Assessment Tool  
 **Technologies:** Python | HTML | CSS
