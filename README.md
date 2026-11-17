@@ -1,69 +1,80 @@
-# Project Planning
-Python-Based Web Vulnerability Assessment and Security Analysis Tool
+# Network & Application Penetration Testing (NAPT)
 
-### 1. Project Overview
-A lightweight Python-based web application security assessment tool developed using Python, HTML, and CSS. It identifies common web security weaknesses through basic, non-invasive security checks and displays findings through a simple dashboard.
+## Project Overview
 
-### 2. Main Objectives
-- Identify common web security misconfigurations.
-- Check HTTPS and HTTP security headers.
-- Analyze cookie security attributes.
-- Examine basic HTML form information.
-- Display security findings with severity levels.
-- Provide recommendations and downloadable reports.
+Network & Application Penetration Testing (NAPT) is a Python-based cybersecurity mini-project designed to identify and assess basic security weaknesses in network systems and web applications.
 
-### 3. Planned Features
-1. **HTTPS Assessment:** Check secure HTTPS usage.
-2. **Security Header Analysis:** Identify missing HTTP security headers.
-3. **Cookie Analysis:** Check Secure, HttpOnly, and SameSite attributes.
-4. **HTML Form Analysis:** Identify forms and password fields.
-5. **Security Dashboard:** Display findings and severity classifications.
-6. **Report Generation:** Generate downloadable assessment reports.
+The project provides a simple web-based interface where users can perform basic security assessments, identify potential vulnerabilities, analyze security risks, and generate assessment reports.
 
-### 4. Technologies
-- Python – Backend and security assessment.
-- HTML – Web interface.
-- CSS – Dashboard design.
-- Python Standard Library – HTTP requests and server functionality.
+## Objectives
 
-### 5. Development Plan
-| Phase | Development Task |
-|---|---|
-| Phase 1 | Create project structure and Python application. |
-| Phase 2 | Develop website URL input interface. |
-| Phase 3 | Implement HTTPS and security header checks. |
-| Phase 4 | Implement cookie and HTML form analysis. |
-| Phase 5 | Develop results dashboard and severity classification. |
-| Phase 6 | Implement report generation and testing. |
+- Identify open network ports and running services.
+- Assess basic network security.
+- Analyze common web application vulnerabilities.
+- Identify security misconfigurations.
+- Evaluate vulnerabilities based on severity.
+- Provide recommendations to improve security.
+- Generate security assessment reports.
 
-### 6. Project Structure
-```text
-Web-Application-Penetration-Testing/
-│
-├── main.py
-├── scanner.py
-├── templates/
-│   ├── index.html
-│   └── results.html
-├── static/
-│   └── style.css
-├── reports/
-├── README.md
-├── PROJECT_PLAN.md
-└── requirements.txt
+## Key Features
+
+### 1. Network Security Assessment
+- TCP port scanning.
+- Open port identification.
+- Basic service identification.
+- Banner grabbing.
+- Detection of potentially risky network services.
+
+### 2. Web Application Security Assessment
+- HTTPS configuration checking.
+- HTTP security header analysis.
+- Cookie security analysis.
+- Clickjacking protection checking.
+- Information disclosure detection.
+- Directory listing detection.
+- Sensitive file exposure checks.
+- HTTP method analysis.
+- SSL/TLS certificate checking.
+
+### 3. Vulnerability Analysis
+- Identification of potential security weaknesses.
+- Vulnerability severity classification.
+- Risk analysis.
+- Security recommendations.
+
+### 4. Report Generation
+- Display assessment results.
+- Summarize identified vulnerabilities.
+- Show severity levels.
+- Generate downloadable security assessment reports.
+
+## Technologies Used
+
+- Python
+- HTML
+- CSS
+- JavaScript
+- Python Standard Library
+- Socket Programming
+- HTTP
+- SSL/TLS
+
+## How to Run the Project
+
+1. Download or clone this repository.
+2. Open the project folder in VS Code.
+3. Open the terminal.
+4. Run the following command:
+
+```bash
+python app.py
 ```
 
-### 7. Expected Outcome
-A working web-based security assessment tool that accepts a website URL, performs basic security checks, displays potential security issues, and generates a downloadable report.
+5. Open the local website in your browser using the address displayed in the terminal.
 
-### 8. Limitations
-- No complete penetration testing.
-- No vulnerability exploitation.
-- No authenticated scanning.
-- No automatic website crawling.
-- Findings require manual verification.
+## Project Applications
 
----
-**Project Category:** Cybersecurity  
-**Project Type:** Python-Based Web Application Security Assessment Tool  
-**Technologies:** Python | HTML | CSS
+- Basic network security assessment.
+- Web application security analysis.
+- Identification of common security misconfigurations.
+- Cybersecurity learning and practical demonstrations
