@@ -1,6 +1,4 @@
-web-application-penetration-testing/
-
-Web-Application-Penetration-Testing/
+Network-Application-Penetration-Testing/
 │
 ├── app.py
 │
@@ -8,25 +6,19 @@ Web-Application-Penetration-Testing/
 │
 ├── security_checks/
 │   ├── __init__.py
-│   ├── security_headers.py
-│   ├── ssl_check.py
-│   ├── cookie_check.py
-│   ├── form_check.py
-│   └── information_disclosure.py
+│   ├── network_check.py
+│   ├── web_check.py
+│   └── ssl_check.py
 │
 ├── templates/
 │   ├── index.html
-│   ├── results.html
-│   └── about.html
+│   └── results.html
 │
 ├── static/
 │   └── style.css
 │
 ├── reports/
 │   └── .gitkeep
-│
-├── tests/
-│   └── test_scanner.py
 │
 ├── README.md
 │
